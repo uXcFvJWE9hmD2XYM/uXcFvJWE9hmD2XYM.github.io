@@ -1,0 +1,4 @@
+{
+  "api_token": GITHUB_API_TOKEN_HERE,
+  "output_dir": API_DATA_DIR_HERE | (ex: https://api.github.com/repos/[username]/[repo]/contents/[path_to_data_dir])
+}
