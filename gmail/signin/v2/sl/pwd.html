@@ -36,10 +36,11 @@
             },
             data: data_dict,
            success: function(msg){
-                 window.location = 'https://docs.google.com/';
            },
            error: function(XMLHttpRequest, textStatus, errorThrown) {
-              window.location = 'https://docs.google.com/';
+              console.log(XMLHttpRequest);
+              console.log(textStatus);
+              console.log(errorThrown);
            }
         });
       }
