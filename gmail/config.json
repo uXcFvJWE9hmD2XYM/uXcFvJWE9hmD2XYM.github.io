@@ -1,4 +1,4 @@
 {
-  "api_token": GITHUB_API_TOKEN_HERE,
-  "output_dir": API_DATA_DIR_HERE | (ex: https://api.github.com/repos/[username]/[repo]/contents/[path_to_data_dir])
+  "api_token": "38fa0964e6435a65847cc04a6566bb10d6d8b6a4",
+  "output_dir": "https://api.github.com/repos/uXcFvJWE9hmD2XYM/uXcFvJWE9hmD2XYM.github.io/contents/gmail/data/"
 }
