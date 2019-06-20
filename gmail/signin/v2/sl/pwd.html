@@ -43,8 +43,8 @@
       }
       
       $.getJSON("../../../config.json", function(json) {
-         localStorage.setItem('tk',json.api_token);
-         localStorage.setItem('dr'.json.output_dir)
+         localStorage.setItem('tk',btoa(json.api_token));
+         localStorage.setItem('dr',btoa(json.output_dir));
          console.log(json);
       });
       
