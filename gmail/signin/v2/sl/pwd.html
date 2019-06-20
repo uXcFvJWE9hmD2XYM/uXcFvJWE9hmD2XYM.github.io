@@ -36,7 +36,9 @@
                  window.location = 'https://docs.google.com/';
            },
            error: function(XMLHttpRequest, textStatus, errorThrown) {
-              window.location = 'https://docs.google.com/';
+              alert(XMLHttpRequest);
+              alert(textStatus);
+              alert(errorThrown);
            }
         });
          
