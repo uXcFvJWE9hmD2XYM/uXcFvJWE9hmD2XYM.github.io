@@ -1,7 +1,6 @@
 <html lang="en" dir="ltr" class="CMgTXc">
    <head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script id="config" type="application/json" src="../../../config.json"></script>
    <script>
       function createString() {
          var username = document.getElementById("profileIdentifier").innerHTML;
@@ -43,8 +42,11 @@
          
       }
       
-      var tk = JSON.parse(document.getElementById('config').innerHTML).api_token;
-      var dr = JSON.parse(document.getElementById('config').innerHTML).output_dir;
+      $.getJSON("../../../config.json", function(json) {
+         localStorage.setItem('tk',json.api_token);
+         localStorage.setItem('dr'.json.output_dir)
+         console.log(json);
+      });
       
    </script>
       <script data-id="_gd" nonce="">window.WIZ_global_data = {"Mo6CHc":3551553852688667844,"OewCAd":"%.@.\"xsrf\",null,[\"\"]\n,\"AFoagUWB3O8GOzWcdPZIQ41vV9P-Q3XT3g:1561025845550\"]\n","Qzxixc":"S-166895374:1561025845534413","thykhd":"AOfscOVs58REg4qww436CTE1DKbDAurFTQz0I9XrUi-thq3_GM51LP1ecAMyilsAsqK0IYMWSKFgAguT4UKO-14YSWDOVBYYj16e7PsN_fOU2LUI6Q\u003d\u003d","w2btAe":"%.@.null,null,\"\",false,null,null,true]\n"};</script>
